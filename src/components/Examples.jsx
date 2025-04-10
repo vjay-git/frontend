@@ -29,7 +29,9 @@ if (!selectedTopic) {
 }
     return (
         <Section title="Examples" id="examples">
-            <Tabs buttons={<menu>
+            
+            <Tabs buttonsContainer = "menu" buttons={<menu>
+            
             <TabButton
               isSelected={selectedTopic === 'components'}
               onClick={() => handleSelect('components')}
